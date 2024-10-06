@@ -1,21 +1,27 @@
 'use client';
-import { Form, Button } from "antd";
+import { Form } from "antd";
 import { CustomInput } from "@/components/CustomInput";
 import { registerFields } from "@/constants/registerFields";
+import { PrimaryBtn } from "@/components/CustomBtn";
+import Link from "next/link";
+import { RegisterBox } from "@/components/RegisterBox";
+import { AppBox } from "@/components/AppBox";
 
+import styles from "./index.module.scss"
 export const RegisterForm = () => {
     return (
         <Form
-            style={{
-                width: '339px'
-            }}
+            className={styles.formWrap}
         >
             {
-                registerFields.map((elem) => <CustomInput {...elem} />)
+                registerFields.map((elem, ind) => <CustomInput key={ind} {...elem} />)
             }
-            <Button htmlType="submit" type="primary">
-                Click
-            </Button>
+            <Link className={styles.link} href={"/"}>Забыли пароль?</Link>
+            <PrimaryBtn>
+                ВОЙТИ
+            </PrimaryBtn>
+            <RegisterBox />
+            <AppBox />
         </Form>
     )
-}
+};

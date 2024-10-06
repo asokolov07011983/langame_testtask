@@ -1,0 +1,18 @@
+.btnWrap {
+    button {
+        height: 44px;
+        color: #fff;
+        background: #DC0000;
+        border-radius: 34px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16.8px;
+        transition: .3s;
+        &:hover {
+            border: 1px solid #B5B5B5!important;
+            background: transparent!important;
+            color: #000000!important;
+        }
+    }
+}
+

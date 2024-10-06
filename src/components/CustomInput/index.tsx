@@ -1,4 +1,3 @@
-'use client';
 import { Input, Form } from "antd";
 import Image from "next/image";
 
@@ -9,7 +8,6 @@ export const CustomInput = ({ name, message, required, type, placeholder, src, a
         <div className={styles.inputWrap}>
             <Form.Item
                 name={name}
-                // label={"1111111111111"}
                 className={styles.inputInner}
                 required={required}
                 rules={[{

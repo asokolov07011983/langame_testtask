@@ -1,36 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
+  font-family: Lato, sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /*color: var(--foreground);*/
-  /*background: var(--background);*/
-  font-family: Lato, sans-serif;
   background-color: #B6B6B6;
-}
-.main {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  border-radius: 48px;
-  background-color: #fff;
-  overflow: hidden;
 }
 .elementBgUp {
   position: absolute;
@@ -42,8 +19,22 @@ body {
   bottom: 0;
   left: 0;
 }
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 1080px;
+  border-radius: 48px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.contentWrap {
+  padding-top: 129px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  margin-bottom: 66px;
 }
