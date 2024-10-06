@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Image from "next/image";
+import { AntdRegistry } from '@ant-design/nextjs-registry';
 
 import "./globals.css";
 
@@ -48,7 +49,9 @@ export default function RootLayout({
               width={212}
               height={177}
           />
-          { children }
+          <AntdRegistry>
+            { children }
+          </AntdRegistry>
         </div>
       </body>
     </html>

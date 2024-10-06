@@ -1,6 +1,4 @@
-'use client';
 import Image from "next/image";
-import {CustomInput} from "@/components/CustomInput";
 import {RegisterForm} from "@/components/RegisterForm";
 
 export default function Home() {
