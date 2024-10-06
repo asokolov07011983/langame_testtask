@@ -2,20 +2,20 @@
   position: relative;
   width: 100%;
   background: #EFEFEF;
-  height: 82px;
+  height: 8.2rem;
   border-radius: 8px;
   color: #909090;
-  margin-bottom: 21px;
+  margin-bottom: 2.1rem;
   & input {
-    font-size: 15px;
-    line-height: 15px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
     font-weight: 300;
   }
   & .inputInner {
     width: 90%;
     position: relative;
-    top: 28px;
-    left: 18px;
+    top: 2.8rem;
+    left: 1.8rem;
     & span {
       padding: 0;
       background: #EFEFEF!important;
@@ -24,7 +24,7 @@
       border-color: transparent!important;
       box-shadow: none!important;
       & img {
-        margin-right: 12px;
+        margin-right: 1.2rem;
       }
     }
   }

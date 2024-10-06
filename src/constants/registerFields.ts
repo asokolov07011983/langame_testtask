@@ -9,7 +9,6 @@ export const registerFields: any[] = [
         placeholder: "Фамилия Имя Отчество",
         src: "/user.svg",
         alt: "icon",
-        width: 638
     },
     {
         name: "telephone",

@@ -1,19 +1,19 @@
 .contentWrap {
-  padding-top: 91px;
+  padding-top: 9.1rem;
   text-align: center;
   & h1 {
     font-weight: 700;
-    font-size: 25px;
-    line-height: 23px;
-    padding-bottom: 55px;
+    font-size: 2.5rem;
+    line-height: 2.3rem;
+    padding-bottom: 5.5rem;
   }
   & .homeLink {
-    margin-top: 47px;
+    margin-top: 4.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 46px;
+    height: 4.6rem;
     border: 1px solid #B5B5B5;
     border-radius: 34px;
     transition: .3s;
@@ -23,11 +23,11 @@
     & .homeLinkContent {
       display: flex;
       & img {
-        margin-right: 10px;
+        margin-right: 1rem;
       }
       & p {
-        font-size: 14px;
-        line-height: 16.8px;
+        font-size: 1.4rem;
+        line-height: 1.68rem;
         font-weight: 700;
         text-transform: uppercase;
         color: #000000;

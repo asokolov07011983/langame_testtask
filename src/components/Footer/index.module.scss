@@ -4,14 +4,14 @@
     align-items: center;
     position: absolute;
     left: 50%;
-    bottom: 17px;
+    bottom: 1.7rem;
     transform: translateX(-50%);
     & ul {
         display: flex;
         gap: 15px;
         font-weight: 400;
-        font-size: 12px;
-        line-height: 24px;
+        font-size: 1.2rem;
+        line-height: 2.4rem;
         & a:hover {
             border-bottom: 1px solid #000000;
         }

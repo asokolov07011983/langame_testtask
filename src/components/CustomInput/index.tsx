@@ -1,9 +1,11 @@
 import { Input, Form } from "antd";
 import Image from "next/image";
+import { useScreenWidth } from "@/hooks/useScreenWidth";
 
 import styles from "./index.module.scss";
-
+import {getRealSize} from "@/utils/getRealSize";
 export const CustomInput = ({ name, message, required, type, placeholder, src, alt, width }) => {
+    const screenWidth = useScreenWidth();
     return (
         <div
             className={styles.inputWrap}
@@ -27,8 +29,8 @@ export const CustomInput = ({ name, message, required, type, placeholder, src, a
                     prefix={<Image
                         src={src}
                         alt={alt}
-                        width={24}
-                        height={24}
+                        width={getRealSize(24, screenWidth)}
+                        height={getRealSize(24, screenWidth)}
                     />}
                 />
             </Form.Item>

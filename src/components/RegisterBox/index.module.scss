@@ -2,19 +2,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 67px 0 83px;
+  padding: 6.7rem 0 8.3rem;
   font-family: Lato, sans-serif;
   & p {
     font-weight: 400;
-    font-size: 13px;
-    line-height: 15.6px;
+    font-size: 1.3rem;
+    line-height: 1.56rem;
     color: #000000;
-    margin-bottom: 7px;
+    margin-bottom: .7rem;
   }
   & a {
     font-weight: 700;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
     color: #DC0000;
     transition: .3s;
     &:hover {

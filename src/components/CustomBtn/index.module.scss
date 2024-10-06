@@ -1,13 +1,14 @@
 .btnWrap {
     width: 100%;
     button {
-        height: 44px;
+        height: 4.4rem;
         color: #fff;
         background: #DC0000;
         border-radius: 34px;
+        font-family: Lato, sans-serif;
         font-weight: 700;
-        font-size: 14px;
-        line-height: 16.8px;
+        font-size: 1.4rem;
+        line-height: 1.68rem;
         transition: .3s;
         text-transform: uppercase;
         &:hover {
