@@ -1,31 +1,31 @@
 .inputWrap {
+  position: relative;
   width: 100%;
   background: #EFEFEF;
   height: 82px;
   border-radius: 8px;
   color: #909090;
-  display: flex;
-  align-items: center;
-  & .ant-input-outlined {
-    padding: 0;
+  & input {
+    font-size: 15px!important;
+    line-height: 15px!important;
+    font-weight: 300;
+    font-family: Lato, sans-serif!important;
   }
-  & span {
-    background: #EFEFEF;
-    border: none;
-    &:focus-within {
-      background: #EFEFEF;
-      border: none;
-      outline: none;
+  & .inputInner {
+    width: 90%;
+    position: relative;
+    top: 28px;
+    left: 18px;
+    & span {
+      padding: 0;
+      background: #EFEFEF!important;
+      border-width: 0!important;
+      border-style: none!important;
+      border-color: transparent!important;
       box-shadow: none!important;
+      & img {
+        margin-right: 12px;
+      }
     }
-    &:hover {
-      background: #EFEFEF;
-      border: none;
-    }
-  }
-  & svg {
-    fill: #777777;
-    width: 24px;
-    height: 24px;
   }
 }

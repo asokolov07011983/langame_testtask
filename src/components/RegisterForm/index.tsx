@@ -1,7 +1,7 @@
 'use client';
-import {Form, Button, Input} from "antd";
-import {CustomInput} from "@/components/CustomInput";
-import {MobileOutlined} from "@ant-design/icons";
+import { Form, Button } from "antd";
+import { CustomInput } from "@/components/CustomInput";
+import { registerFields } from "@/constants/registerFields";
 
 export const RegisterForm = () => {
     return (
@@ -10,8 +10,9 @@ export const RegisterForm = () => {
                 width: '339px'
             }}
         >
-            <CustomInput />
-
+            {
+                registerFields.map((elem) => <CustomInput {...elem} />)
+            }
             <Button htmlType="submit" type="primary">
                 Click
             </Button>

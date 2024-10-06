@@ -1,25 +1,31 @@
 'use client';
 import { Input, Form } from "antd";
-import { MobileOutlined } from "@ant-design/icons";
-import styles from "@/styles/customInput.module.scss";
+import Image from "next/image";
 
-export const CustomInput = () => {
-    console.log('styles', styles)
+import styles from "./index.module.scss";
+
+export const CustomInput = ({ name, message, required, type, placeholder, src, alt }) => {
     return (
         <div className={styles.inputWrap}>
             <Form.Item
-                name="telephone"
+                name={name}
                 // label={"1111111111111"}
-                required
+                className={styles.inputInner}
+                required={required}
                 rules={[{
-                    required: true,
-                    message: 'Пожалуста заполните поле'
+                    required: required,
+                    message: message
                 }]}
             >
                 <Input
-                    type='tel'
-                    placeholder="Введите номер телефона"
-                    prefix={<MobileOutlined />}
+                    type={type}
+                    placeholder={placeholder}
+                    prefix={<Image
+                        src={src}
+                        alt={alt}
+                        width={24}
+                        height={24}
+                    />}
                 />
             </Form.Item>
         </div>
