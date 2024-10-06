@@ -3,12 +3,18 @@ import Image from "next/image";
 
 import styles from "./index.module.scss";
 
-export const CustomInput = ({ name, message, required, type, placeholder, src, alt }) => {
+export const CustomInput = ({ name, message, required, type, placeholder, src, alt, width }) => {
     return (
-        <div className={styles.inputWrap}>
+        <div
+            className={styles.inputWrap}
+            style={{
+                width: width ? `${width}px` : "100%"
+            }}
+        >
             <Form.Item
                 name={name}
                 className={styles.inputInner}
+
                 required={required}
                 rules={[{
                     required: required,

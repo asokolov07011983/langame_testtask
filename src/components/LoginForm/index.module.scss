@@ -1,0 +1,13 @@
+.formWrap {
+    width: 339px;
+    & .link {
+        padding: 8px 0 49px;
+        display: block;
+        font-family: Lato, sans-serif;
+        text-align: center;
+        color: #010101;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+    }
+}

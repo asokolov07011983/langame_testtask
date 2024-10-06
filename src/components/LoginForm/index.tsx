@@ -8,18 +8,20 @@ import { RegisterBox } from "@/components/RegisterBox";
 import { AppBox } from "@/components/AppBox";
 
 import styles from "./index.module.scss"
-import {registerFields} from "@/constants/registerFields";
-export const RegisterForm = () => {
+export const LoginForm = () => {
     return (
         <Form
             className={styles.formWrap}
         >
             {
-                registerFields.map((elem, ind) => <CustomInput key={ind} {...elem} />)
+                loginFields.map((elem, ind) => <CustomInput key={ind} {...elem} />)
             }
+            <Link className={styles.link} href={"/"}>Забыли пароль?</Link>
             <PrimaryBtn>
-                Зарегистрироваться
+                ВОЙТИ
             </PrimaryBtn>
+            <RegisterBox />
+            <AppBox />
         </Form>
     )
 };

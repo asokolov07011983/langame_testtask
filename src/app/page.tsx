@@ -1,9 +1,7 @@
 import Image from "next/image";
-import { RegisterForm } from "@/components/RegisterForm";
+import { LoginForm } from "@/components/LoginForm";
 
 import "./globals.css";
-import {Footer} from "@/components/Footer";
-
 export default function Home() {
   return (
     <div className="contentWrap">
@@ -14,8 +12,7 @@ export default function Home() {
             width={125}
             height={75}
         />
-        <RegisterForm />
-        <Footer />
+        <LoginForm />
     </div>
   );
 }

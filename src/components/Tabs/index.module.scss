@@ -1,0 +1,13 @@
+.tabBtn {
+  width: 156px;
+  height: 37px;
+  border-radius: 33px;
+  border: 1px solid transparent;
+  margin-bottom: 55px;
+  & p {
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 11px;
+    text-transform: uppercase;
+  }
+}

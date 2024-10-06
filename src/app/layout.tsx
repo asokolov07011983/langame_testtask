@@ -4,6 +4,7 @@ import Image from "next/image";
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 
 import "./globals.css";
+import {Footer} from "@/components/Footer";
 
 const lato = Lato({
   subsets: [],
@@ -45,6 +46,7 @@ export default function RootLayout({
           <AntdRegistry>
             { children }
           </AntdRegistry>
+          <Footer />
         </div>
       </body>
     </html>
