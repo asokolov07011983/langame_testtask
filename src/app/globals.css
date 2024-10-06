@@ -15,11 +15,32 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /*color: var(--foreground);*/
+  /*background: var(--background);*/
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  background-color: #B6B6B6;
 }
-
+.main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  border-radius: 48px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.elementBgUp {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.elementBgDown {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
