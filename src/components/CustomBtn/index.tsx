@@ -1,7 +1,9 @@
+import { FC } from "react";
 import { Button } from "antd";
 
 import styles from "./index.module.scss"
-export const PrimaryBtn = ({ children }) => {
+
+export const PrimaryBtn: FC = ({ children }) => {
     return (
         <div className={styles.btnWrap}>
             <Button

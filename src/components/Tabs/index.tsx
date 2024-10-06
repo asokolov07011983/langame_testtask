@@ -1,9 +1,9 @@
 "use client"
-import { useState } from "react";
+import { FC, useState} from "react";
 import {  Space } from "antd";
 
 import styles from "./index.module.scss"
-export const Tabs = () => {
+export const Tabs: FC = () => {
     const [position, setPosition] = useState<number>(1);
 
     return (

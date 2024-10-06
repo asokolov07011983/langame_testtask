@@ -1,21 +1,18 @@
-"use client";
-import Image from "next/image";
 import { LoginForm } from "@/components/LoginForm";
-import {useScreenWidth} from "@/hooks/useScreenWidth";
+import { Logo } from "@/components/Logo";
+import { Metadata } from "next";
 
 import "./globals.css";
-import {getRealSize} from "@/utils/getRealSize";
+
+export const metadata: Metadata = {
+    title: "Лангейм Программные Решения",
+    description: "Страница ввода логина",
+};
 export default function Home() {
-  const screenWidth = useScreenWidth();
+
   return (
     <div className="contentWrap">
-        <Image
-            src="/logotypelogin.png"
-            alt="logo"
-            className="logo"
-            width={getRealSize(125, screenWidth)}
-            height={getRealSize(75, screenWidth)}
-        />
+        <Logo />
         <LoginForm />
     </div>
   );

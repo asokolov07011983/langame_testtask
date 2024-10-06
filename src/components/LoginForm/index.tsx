@@ -1,4 +1,5 @@
 'use client';
+import { FC } from "react";
 import { Form } from "antd";
 import { CustomInput } from "@/components/CustomInput";
 import { loginFields } from "@/constants/loginFields";
@@ -8,7 +9,8 @@ import { RegisterBox } from "@/components/RegisterBox";
 import { AppBox } from "@/components/AppBox";
 
 import styles from "./index.module.scss"
-export const LoginForm = () => {
+
+export const LoginForm: FC = () => {
     return (
         <Form
             className={styles.formWrap}

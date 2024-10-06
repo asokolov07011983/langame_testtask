@@ -11,6 +11,9 @@
     line-height: 1.5rem;
     font-weight: 300;
   }
+  input::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
   & .inputInner {
     width: 90%;
     position: relative;

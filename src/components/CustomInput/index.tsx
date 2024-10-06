@@ -1,10 +1,12 @@
+import { FC } from "react";
 import { Input, Form } from "antd";
 import Image from "next/image";
 import { useScreenWidth } from "@/hooks/useScreenWidth";
+import { getRealSize } from "@/utils/getRealSize";
 
 import styles from "./index.module.scss";
-import {getRealSize} from "@/utils/getRealSize";
-export const CustomInput = ({ name, message, required, type, placeholder, src, alt, width }) => {
+
+export const CustomInput: FC = ({ name, message, required, type, placeholder, src, alt, width }) => {
     const screenWidth = useScreenWidth();
     return (
         <div

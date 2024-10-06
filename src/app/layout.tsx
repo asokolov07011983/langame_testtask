@@ -4,17 +4,12 @@ import Image from "next/image";
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 
 import "./globals.css";
-import {Footer} from "@/components/Footer";
+import { Footer } from "@/components/Footer";
 
 const lato = Lato({
   subsets: [],
   weight: ["300", "400", "700", "900"]
 });
-
-export const metadata: Metadata = {
-  title: "Лангейм Программные Решения",
-  description: "Страница ввода логина",
-};
 
 export default function RootLayout({
   children,

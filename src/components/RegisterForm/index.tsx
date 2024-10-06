@@ -1,15 +1,13 @@
 'use client';
+import { FC } from "react";
 import { Form } from "antd";
 import { CustomInput } from "@/components/CustomInput";
-import { loginFields } from "@/constants/loginFields";
 import { PrimaryBtn } from "@/components/CustomBtn";
-import Link from "next/link";
-import { RegisterBox } from "@/components/RegisterBox";
-import { AppBox } from "@/components/AppBox";
+import { registerFields } from "@/constants/registerFields";
 
 import styles from "./index.module.scss"
-import {registerFields} from "@/constants/registerFields";
-export const RegisterForm = () => {
+
+export const RegisterForm: FC = () => {
     return (
         <Form
             className={styles.formWrap}

@@ -1,10 +1,11 @@
 import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useScreenWidth } from "@/hooks/useScreenWidth";
+import { getRealSize } from "@/utils/getRealSize";
 
 import styles from "./index.module.scss";
-import {useScreenWidth} from "@/hooks/useScreenWidth";
-import { getRealSize } from "@/utils/getRealSize";
+
 export const AppBox: FC = () => {
     const screenWidth = useScreenWidth();
     return (

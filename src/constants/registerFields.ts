@@ -32,10 +32,10 @@ export const registerFields: any[] = [
     },
     {
         name: "document",
-        // message: "Пожалуйста заполните Дату рождения",
+        message: "Введите тип документа",
         required: true,
-        type: "select",
-        // placeholder: "Дата рождения",
+        type: "text",
+        placeholder: "Тип документа",
         src: "/id.svg",
         alt: "icon",
         width: 300
@@ -44,7 +44,7 @@ export const registerFields: any[] = [
         name: "docNumber",
         message: "Поле должно содержать 10 символов",
         required: true,
-        type: "number",
+        type: "text",
         placeholder: "Укажите 10 цифр серия и номер",
         src: "/transcript.svg",
         alt: "icon",
